@@ -1,0 +1,159 @@
+<!doctype html><html lang="pt-BR"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Achados do Litoral</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: faixa de topo com busca, chips de categoria, grade de produtos que vira 2 colunas no celular */
+:root{
+  --bg:#F3F6F6; --surface:#FFFFFF; --ink:#13232B; --muted:#5B6B72; --line:#DCE4E5;
+  --accent:#0B7A75; --accent-ink:#FFFFFF; --deal:#E2553D; --tile:#E4EFEE;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Figtree",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1719; --surface:#152225; --ink:#E8F0F0; --muted:#93A6AA; --line:#24363A;
+  --accent:#3DB8B0; --accent-ink:#06201F; --deal:#FF7A62; --tile:#1B2D30; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1719; --surface:#152225; --ink:#E8F0F0; --muted:#93A6AA; --line:#24363A;
+  --accent:#3DB8B0; --accent-ink:#06201F; --deal:#FF7A62; --tile:#1B2D30; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.bar{display:flex;align-items:center;gap:16px;padding-block:12px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.logo i{width:30px;height:30px;border-radius:8px;background:var(--accent);display:grid;place-items:center}
+.logo i svg{width:18px;height:18px;stroke:var(--accent-ink)}
+.search{flex:1;min-width:200px;display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+.search svg{width:18px;height:18px;stroke:var(--muted);flex:none}
+.search input{border:0;background:transparent;font:inherit;color:var(--ink);width:100%;outline:none}
+.search:focus-within{border-color:var(--accent)}
+
+.hero{padding-block:28px 8px}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,5vw,44px);line-height:1.05;letter-spacing:-.025em;margin:0 0 8px;text-wrap:balance;max-width:20ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--muted);margin:0;max-width:60ch}
+
+.chips{display:flex;gap:8px;overflow-x:auto;padding-block:20px 8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:600 14px var(--body);padding:8px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,.buy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+section{padding-block:20px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}
+.sec-head h2{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.015em;margin:0}
+.sec-head span{color:var(--muted);font-size:13px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+@media (max-width:480px){.grid{grid-template-columns:1fr 1fr;gap:10px}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;min-width:0}
+.thumb{aspect-ratio:1/1;max-width:100%;background:var(--tile);display:grid;place-items:center;position:relative}
+.thumb svg{width:42%;height:42%;stroke:var(--accent);stroke-width:1.4;fill:none}
+.thumb img{width:100%;height:100%;object-fit:contain;background:#fff}
+.rank{position:absolute;top:8px;left:8px;background:var(--ink);color:var(--bg);font:700 12px var(--body);padding:3px 8px;border-radius:6px}
+.off{position:absolute;top:8px;right:8px;background:var(--deal);color:#fff;font:700 12px var(--body);padding:3px 8px;border-radius:6px}
+.info{padding:12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.cat{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.name{font-weight:600;font-size:14px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em}
+.old{color:var(--muted);text-decoration:line-through;font-size:13px;font-variant-numeric:tabular-nums}
+.price{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.meta{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.price small{font:600 12px var(--body);color:var(--accent);letter-spacing:0}
+.buy{margin-top:auto;display:block;text-align:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:14px;padding:10px;border-radius:10px;margin-top:10px}
+.buy:hover{filter:brightness(1.08)}
+.empty{color:var(--muted);padding:24px 0}
+
+.note{margin-top:16px;background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--muted)}
+footer{padding-block:28px 40px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);margin-top:24px}
+@media (prefers-reduced-motion:no-preference){.card{transition:transform .15s}.card:hover{transform:translateY(-2px)}}
+</style>
+
+<header><div class="wrap bar">
+  <div class="logo"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c3-4 6-4 9 0s6 4 9 0"/><path d="M3 9c3-4 6-4 9 0s6 4 9 0"/></svg></i>Achados do Litoral</div>
+  <label class="search" for="q"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Buscar produto…" autocomplete="off"></label>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Os mais vendidos do Mercado Livre, <em>garimpados</em> num lugar só</h1>
+    <p>Campeões de venda com bom preço e boa avaliação, de suplementos a decoração e artigos de praia, e uma seção de luta escolhida por quem treina. Você compra direto no Mercado Livre, com a segurança e a entrega de lá.</p>
+  </div>
+
+  <nav class="chips" id="chips" aria-label="Categorias"></nav>
+
+  <section id="top">
+    <div class="sec-head"><h2>Mais vendidos da semana</h2><span>Destaques</span></div>
+    <div class="grid" id="topGrid"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2 id="allTitle">Todos os achados</h2><span id="count"></span></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+</main>
+
+<footer><div class="wrap">Achados do Litoral participa do Programa de Afiliados do Mercado Livre. Podemos receber comissão pelas compras feitas através dos links desta página, sem custo extra para você. Preços e disponibilidade podem mudar no site do vendedor.</div></footer>
+
+<script>
+/* Os produtos ficam no arquivo produtos.json.
+   link: link de afiliado (meli.la) | img: foto | top: posição no ranking (opcional) | pix: true se o preço é no Pix */
+const IMG="https://http2.mlstatic.com/D_Q_NP_2X_";
+let PRODUTOS = [];
+/* ======================================= */
+const ICON={
+ "Beleza":'<rect x="8" y="9" width="8" height="12" rx="2"/><path d="M10 9V6h4v3M10 4h4"/>',
+ "Suplementos":'<path d="M7 7h10v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M8 3h8v4H8zM7 12h10"/>',
+ "Luta":'<path d="M7 10V7a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-3a3 3 0 0 1-3-3z"/><path d="M7 11h4M8 18v3h7v-3"/>',
+ "Eletrônicos":'<rect x="7" y="3" width="10" height="18" rx="2"/><path d="M12 8l-2 4h4l-2 4"/>',
+ "Limpeza":'<path d="M8 8h8l1 12a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z"/><path d="M10 8V4h3l2 2M10 13h4"/>',
+ "Moda":'<path d="M3 16c3 0 5-1 7-4l2 2c2 1 5 1 9 1v3H3z"/>',
+ "Casa":'<path d="M3 11l9-7 9 7v9H3z"/><path d="M10 20v-6h4v6"/>',
+ "Praia":'<path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9zM12 12v9M8 21h8"/>',
+ "Decoração":'<path d="M12 3v3M8 21h8M12 6a5 5 0 0 1 5 5v4H7v-4a5 5 0 0 1 5-5zM10 15v6M14 15v6"/>',
+ "Decoração":'<path d="M12 3v3M8 21h8M12 6a5 5 0 0 1 5 5v4H7v-4a5 5 0 0 1 5-5zM10 15v6M14 15v6"/>',
+ "Impressão 3D":'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v5"/>'
+};
+const brl=v=>v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function iconSvg(c){return `<svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">${ICON[c]||ICON["Casa"]}</svg>`}
+function card(p){
+  const off=p.de?Math.round((1-p.preco/p.de)*100):0;
+  const src=/^(data:|https?:|img\/)/.test(p.img||"")?p.img:IMG+p.img;
+  const vis=p.img?`<img src="${esc(src)}" alt="${esc(p.nome)}" loading="lazy" data-c="${esc(p.cat)}">`:iconSvg(p.cat);
+  return `<article class="card"><div class="thumb">${vis}${off>0?`<span class="off">-${off}%</span>`:""}</div>
+  <div class="info"><span class="cat">${esc(p.cat)}</span><span class="name">${esc(p.nome)}</span>
+  ${p.nota?`<span class="meta">★ ${String(p.nota).replace(".",",")}${p.vendidos?` · ${esc(p.vendidos)} vendidos`:""}</span>`:""}
+  ${p.de?`<span class="old">${brl(p.de)}</span>`:""}<span class="price">${brl(p.preco)}${p.pix?` <small>no Pix</small>`:""}</span>
+  <a class="buy" href="${esc(p.link)}" target="_blank" rel="sponsored noopener">Ver no Mercado Livre</a></div></article>`;
+}
+document.addEventListener("error",e=>{const t=e.target;if(t.tagName==="IMG"&&t.dataset.c){t.outerHTML=iconSvg(t.dataset.c)}},true);
+
+fetch("produtos.json",{cache:"no-cache"}).then(r=>r.json()).then(lista=>{PRODUTOS=lista;
+const cats=["Todos",...new Set(PRODUTOS.map(p=>p.cat))];
+let cat="Todos",q="";
+const chips=document.getElementById("chips");
+chips.innerHTML=cats.map(c=>`<button class="chip" aria-pressed="${c===cat}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+chips.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;cat=b.dataset.c;
+  chips.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();render();});
+
+document.getElementById("topGrid").innerHTML=PRODUTOS.filter(p=>p.top).sort((a,b)=>a.top-b.top).slice(0,4).map(card).join("");
+
+function render(){
+  const list=PRODUTOS.filter(p=>(cat==="Todos"||p.cat===cat)&&(!q||p.nome.toLowerCase().includes(q)));
+  document.getElementById("top").hidden=!!q||cat!=="Todos";
+  document.getElementById("allTitle").textContent=cat==="Todos"?"Todos os achados":cat;
+  document.getElementById("count").textContent=list.length+(list.length===1?" produto":" produtos");
+  document.getElementById("grid").innerHTML=list.length?list.map(card).join(""):`<p class="empty">Nenhum produto encontrado para “${esc(q)}”.</p>`;
+}
+render();
+}).catch(()=>{document.getElementById("grid").innerHTML='<p class="empty">Não foi possível carregar os produtos. Atualize a página.</p>'});
+</script>
+
+</body></html>

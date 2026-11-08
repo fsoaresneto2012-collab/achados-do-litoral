@@ -1,0 +1,601 @@
+[
+ {
+  "nome": "Cadeira de Praia Mor Dobrável Preta até 110kg Estrutura em Aço",
+  "cat": "Praia",
+  "preco": 74.95,
+  "de": 78.9,
+  "nota": 4.9,
+  "vendidos": "+50mil",
+  "img": "695489-MLA118417099476_102026-O.webp",
+  "link": "https://meli.la/2sZtJce",
+  "novo": true
+ },
+ {
+  "nome": "Guarda-Sol Grande 2,40m Articulado com Proteção UV",
+  "cat": "Praia",
+  "preco": 112,
+  "de": 140,
+  "nota": 4.7,
+  "vendidos": "+5mil",
+  "img": "690422-MLB119451877143_102026-O-guarda-sol-grande-240m-articulado-uv-praia-piscina-verao.webp",
+  "link": "https://meli.la/2aVSJ1H",
+  "novo": true
+ },
+ {
+  "nome": "Caixa Térmica Termolar SUV 20L com Alça Reforçada Preta",
+  "cat": "Praia",
+  "preco": 78.49,
+  "de": 90,
+  "nota": 4.8,
+  "vendidos": "+1000",
+  "img": "775306-MLA98822261106_112025-O.webp",
+  "link": "https://meli.la/1LUVTPQ",
+  "novo": true
+ },
+ {
+  "nome": "Protetor Solar Corporal Neutrogena Sun Fresh FPS 50 200ml",
+  "cat": "Praia",
+  "preco": 48.99,
+  "de": 115.9,
+  "nota": 4.8,
+  "vendidos": "+10mil",
+  "img": "734381-MLA99331688074_112025-O.webp",
+  "link": "https://meli.la/124ugEz",
+  "novo": true
+ },
+ {
+  "nome": "Toalha Microfibra Nabaiji G 130x80 Secagem Rápida",
+  "cat": "Praia",
+  "preco": 47,
+  "de": 78.89,
+  "nota": 4.9,
+  "vendidos": "+5mil",
+  "img": "908463-MLA95695346584_102025-O.webp",
+  "link": "https://meli.la/14StQ6F",
+  "novo": true
+ },
+ {
+  "nome": "Garrafa Térmica Inox 1 Litro Gelo 18h com Alça Paracord",
+  "cat": "Praia",
+  "preco": 66.49,
+  "de": 105,
+  "nota": 4.9,
+  "vendidos": "+5mil",
+  "img": "975211-MLA108798624535_032026-O.webp",
+  "link": "https://meli.la/1gTGYem",
+  "novo": true
+ },
+ {
+  "nome": "Bolsa de Praia Grande com Três Bolsos Externos Bege",
+  "cat": "Praia",
+  "preco": 69.9,
+  "nota": 4.9,
+  "vendidos": "+500",
+  "img": "773411-MLA108248757786_032026-O.webp",
+  "link": "https://meli.la/13ZeB93",
+  "novo": true
+ },
+ {
+  "nome": "Canga Toalha de Praia e Piscina Dupla Face",
+  "cat": "Praia",
+  "preco": 85.95,
+  "de": 93.28,
+  "nota": 5.0,
+  "vendidos": "+500",
+  "img": "612130-MLB118228633786_102026-O-canga-toalha-de-praia-e-piscina-dupla-face.webp",
+  "link": "https://meli.la/16nfwJH",
+  "novo": true
+ },
+ {
+  "nome": "Pisca Cortina 300 LEDs 3x3m USB 8 Modos Luzes de Fada Branco Frio",
+  "cat": "Decoração",
+  "preco": 29.99,
+  "de": 49.87,
+  "nota": 4.8,
+  "vendidos": "+10mil",
+  "img": "720324-MLA118519912953_092026-AB.webp",
+  "link": "https://meli.la/1YC7SGA",
+  "novo": true
+ },
+ {
+  "nome": "Cortina Blackout 4,00x2,80 Preta Corta Luz em Tecido Grosso",
+  "cat": "Decoração",
+  "preco": 108.2,
+  "de": 173.2,
+  "nota": 4.7,
+  "vendidos": "+10mil",
+  "img": "664695-MLA96099594865_102025-AB.webp",
+  "link": "https://meli.la/1JQ8MdH",
+  "novo": true
+ },
+ {
+  "nome": "Cortina Blackout em Tecido 3,00x2,80 Cor Palha",
+  "cat": "Decoração",
+  "preco": 76.28,
+  "de": 109.99,
+  "nota": 4.8,
+  "vendidos": "+10mil",
+  "img": "949685-MLA99517006678_112025-AB.webp",
+  "link": "https://meli.la/2EXwGAJ",
+  "novo": true
+ },
+ {
+  "nome": "Kit 10 Fios de Fada LED 2m Luzes Decorativas a Pilha",
+  "cat": "Decoração",
+  "preco": 21.99,
+  "de": 39.99,
+  "nota": 4.9,
+  "vendidos": "+10mil",
+  "img": "964358-MLA99843231633_112025-AB.webp",
+  "link": "https://meli.la/1vsfSGv",
+  "novo": true
+ },
+ {
+  "nome": "Cascata de Natal 400 LEDs 10m Branco Quente 8 Funções à Prova d'Água",
+  "cat": "Decoração",
+  "preco": 69.9,
+  "de": 119.9,
+  "nota": 4.9,
+  "vendidos": "+1000",
+  "img": "964568-MLA115683908212_092026-AB.webp",
+  "link": "https://meli.la/1aR38GA",
+  "novo": true
+ },
+ {
+  "nome": "Cascata Meteoro 8 Tubos LED 50cm Efeito Chuva Branco Frio",
+  "cat": "Decoração",
+  "preco": 44.9,
+  "de": 91.8,
+  "nota": 4.9,
+  "vendidos": "+1000",
+  "img": "692685-MLA116658868139_082026-AB.webp",
+  "link": "https://meli.la/2ERSZAA",
+  "novo": true
+ },
+ {
+  "nome": "Cordão de Luzes Natalinas 100 LEDs 9,5m Branco Quente",
+  "cat": "Decoração",
+  "preco": 19.9,
+  "de": 29.9,
+  "nota": 4.9,
+  "vendidos": "+1000",
+  "img": "736771-MLA117599831710_102026-AB.webp",
+  "link": "https://meli.la/2sihb5x",
+  "novo": true
+ },
+ {
+  "nome": "Saia Tapete para Base de Árvore de Natal Papai Noel Luxo",
+  "cat": "Decoração",
+  "preco": 29.9,
+  "de": 47.37,
+  "nota": 4.7,
+  "vendidos": "+500",
+  "img": "974396-MLA118385009551_092026-AB.webp",
+  "link": "https://meli.la/344TiDz",
+  "novo": true
+ },
+ {
+  "nome": "Fone de Ouvido Aberto Monster AC530 Bluetooth 6.0 Preto",
+  "cat": "Eletrônicos",
+  "preco": 149.99,
+  "de": 299,
+  "link": "https://meli.la/2efG2Wx",
+  "img": "807881-MLB118092996693_092026-V.webp",
+  "novo": true
+ },
+ {
+  "nome": "Caixa de Som Portátil Bluetooth Inova com Rádio FM, Relógio e Alarme",
+  "cat": "Eletrônicos",
+  "preco": 107.2,
+  "de": 160,
+  "link": "https://meli.la/2BWc5Y1",
+  "img": "976297-MLA116938010578_092026-V.webp",
+  "novo": true
+ },
+ {
+  "nome": "Corda de Pular Speed Rope com Rolamento Profissional Ajustável",
+  "cat": "Luta",
+  "preco": 44.59,
+  "de": 49,
+  "link": "https://meli.la/2VUZRSk",
+  "img": "844906-MLB111298726597_052026-V-corda-de-pular-speed-rope-rolamento-profissional-ajustavel.webp",
+  "novo": true
+ },
+ {
+  "nome": "Corda de Pular Profissional Academia Crossfit Fitness",
+  "cat": "Luta",
+  "preco": 36.9,
+  "link": "https://meli.la/1GDrJxU",
+  "img": "797437-MLB118959865177_102026-V-corda-de-pular-profissional-academia-crossfit-fitness.webp",
+  "novo": true
+ },
+ {
+  "nome": "Caneleira Harpia Muay Thai Kickboxing Profissional Dourada Adulto",
+  "cat": "Luta",
+  "preco": 82.35,
+  "de": 84.9,
+  "link": "https://meli.la/2etWfwJ",
+  "img": "765221-MLB116173585124_092026-V.webp",
+  "novo": true
+ },
+ {
+  "nome": "Cama Casal Box Baú 138x188 Branco Corino",
+  "cat": "Casa",
+  "preco": 545,
+  "link": "https://meli.la/2Wxdsk6",
+  "img": "650709-MLB119495017831_102026-V.webp",
+  "novo": true
+ },
+ {
+  "nome": "Caneleira Muay Thai Fheras Freestyle Adulto Profissional",
+  "cat": "Luta",
+  "preco": 124.39,
+  "de": 159.99,
+  "link": "https://meli.la/31xL8TH",
+  "img": "856009-MLB98358082217_112025-V-caneleira-muay-thai-fheras-freestyle-adulto-profissional.webp",
+  "novo": true
+ },
+ {
+  "nome": "Creme Multirreparador Cicaplast Baume B5+ La Roche-Posay 40ml",
+  "cat": "Beleza",
+  "preco": 67.94,
+  "de": 109.9,
+  "pix": true,
+  "nota": 4.9,
+  "vendidos": "+500mil",
+  "top": 1,
+  "img": "695558-MLA119937437423_102026-AB.webp",
+  "link": "https://meli.la/11fVv8M"
+ },
+ {
+  "nome": "Creatina Soldiers Nutrition Sem Sabor 1kg",
+  "cat": "Suplementos",
+  "preco": 68.9,
+  "de": 239.9,
+  "nota": 4.9,
+  "vendidos": "+750mil",
+  "top": 2,
+  "img": "605306-MLA119872143535_102026-AB.webp",
+  "link": "https://meli.la/1NxZrME"
+ },
+ {
+  "nome": "Whey Protein 100% HD Black Skull 900g Baunilha",
+  "cat": "Suplementos",
+  "preco": 104.4,
+  "de": 149.9,
+  "pix": true,
+  "nota": 4.9,
+  "vendidos": "+250mil",
+  "top": 3,
+  "img": "938312-MLA120089437603_102026-AB.webp",
+  "link": "https://meli.la/1sdT9ry"
+ },
+ {
+  "nome": "Saco de Pancada 90cm Profissional + Luva Bate-Saco",
+  "cat": "Luta",
+  "preco": 68.08,
+  "de": 148,
+  "nota": 4.8,
+  "vendidos": "+10mil",
+  "top": 4,
+  "img": "783150-MLB91103824807_082025-AB.webp",
+  "link": "https://meli.la/2LA4RLb"
+ },
+ {
+  "nome": "Carregador Portátil Power Bank Turbo i2GO 20000mAh 20W com Display Digital",
+  "cat": "Eletrônicos",
+  "preco": 155.47,
+  "de": 329.9,
+  "pix": true,
+  "nota": 4.9,
+  "vendidos": "+10mil",
+  "img": "img/carregador-port-til-power-bank-turbo-i2g.webp",
+  "link": "https://meli.la/2eWKfR6"
+ },
+ {
+  "nome": "Caixa de Som Bluetooth Essential Sound GO i2GO 10W Resistente à Água",
+  "cat": "Eletrônicos",
+  "preco": 89.15,
+  "de": 139.9,
+  "pix": true,
+  "nota": 4.7,
+  "vendidos": "+5mil",
+  "img": "img/caixa-de-som-bluetooth-essential-sound-g.webp",
+  "link": "https://meli.la/1Nojc9T"
+ },
+ {
+  "nome": "Power Bank i2GO 10000mAh 4 em 1 com Cabos Acoplados",
+  "cat": "Eletrônicos",
+  "preco": 126.25,
+  "de": 132.9,
+  "pix": true,
+  "nota": 4.7,
+  "vendidos": "+1000",
+  "img": "img/power-bank-i2go-10000mah-4-em-1-com-cabo.webp",
+  "link": "https://meli.la/1g9burn"
+ },
+ {
+  "nome": "Caixa de Som Bluetooth 3 Angle Sound i2GO 12W Resistente à Água",
+  "cat": "Eletrônicos",
+  "preco": 124.9,
+  "de": 239.9,
+  "nota": 4.6,
+  "vendidos": "+1000",
+  "img": "img/caixa-de-som-bluetooth-3-angle-sound-i2g.webp",
+  "link": "https://meli.la/2aAW44u"
+ },
+ {
+  "nome": "Creatina Monohidratada 1kg 100% Pura Dark Lab",
+  "cat": "Suplementos",
+  "preco": 69.9,
+  "de": 159.9,
+  "nota": 4.9,
+  "vendidos": "+500mil",
+  "img": "603981-MLA115262802698_082026-AB.webp",
+  "link": "https://meli.la/2TRB64s"
+ },
+ {
+  "nome": "Lava Roupas Líquido Omo Lavanderia Profissional 7L",
+  "cat": "Limpeza",
+  "preco": 127.9,
+  "nota": 4.9,
+  "vendidos": "+10mil",
+  "img": "741613-MLA99336286980_112025-AB.webp",
+  "link": "https://meli.la/2K3YRqK"
+ },
+ {
+  "nome": "Corda de Pular Speed Rope 3m com Rolamento Duplo e Cabo de Aço",
+  "cat": "Luta",
+  "preco": 19,
+  "nota": 4.8,
+  "vendidos": "+50mil",
+  "img": "867552-MLA112449086376_062026-AB.webp",
+  "link": "https://meli.la/25PZZG1"
+ },
+ {
+  "nome": "Tapete Decorativo Felpudo 2,00x1,50 Cinza Liso",
+  "cat": "Casa",
+  "preco": 61.9,
+  "nota": 4.6,
+  "vendidos": "+10mil",
+  "img": "866258-MLA95942348415_102025-AB.webp",
+  "link": "https://meli.la/339oKZX"
+ },
+ {
+  "nome": "Whey Protein 100% HD Black Skull 900g Chocolate",
+  "cat": "Suplementos",
+  "preco": 103.54,
+  "de": 149.9,
+  "pix": true,
+  "nota": 4.8,
+  "vendidos": "+250mil",
+  "img": "953920-MLA111544908875_052026-AB.webp",
+  "link": "https://meli.la/1brRq2N"
+ },
+ {
+  "nome": "Luva de Boxe Muay Thai 14oz + Bandagem + Bucal + Case Branco/Preto",
+  "cat": "Luta",
+  "preco": 184.69,
+  "de": 256.33,
+  "nota": 4.8,
+  "vendidos": "+100",
+  "img": "858452-MLA105797373137_012026-AB.webp",
+  "link": "https://meli.la/1W68PSu"
+ },
+ {
+  "nome": "Tênis Puma Carina Street BDP",
+  "cat": "Moda",
+  "preco": 299.99,
+  "de": 349.99,
+  "nota": 4.8,
+  "vendidos": "+500",
+  "img": "974850-MLA106612611940_022026-AB.webp",
+  "link": "https://meli.la/2fbcAhW"
+ },
+ {
+  "nome": "Creatina Growth Supplements Monohidratada 500g",
+  "cat": "Suplementos",
+  "preco": 78.9,
+  "de": 104.9,
+  "nota": 4.9,
+  "vendidos": "+250mil",
+  "img": "870227-MLA116260093488_092026-AB.webp",
+  "link": "https://meli.la/2sN6Ds9"
+ },
+ {
+  "nome": "Bandagem Boxe Muay Thai Maximum 5 Metros Preta",
+  "cat": "Luta",
+  "preco": 69.9,
+  "nota": 4.9,
+  "vendidos": "+10mil",
+  "img": "810670-MLA100488646140_122025-AB.webp",
+  "link": "https://meli.la/1Vzkdge"
+ },
+ {
+  "nome": "Tapete Felpudo 2,00x1,50 Sala e Quarto Bordô",
+  "cat": "Casa",
+  "preco": 59.9,
+  "de": 115.9,
+  "nota": 4.6,
+  "vendidos": "+5mil",
+  "img": "613349-MLA96081120223_102025-AB.webp",
+  "link": "https://meli.la/2xx1wgA"
+ },
+ {
+  "nome": "Whey Isolate Protein Fuse 900g Dark Lab Chocolate",
+  "cat": "Suplementos",
+  "preco": 74.95,
+  "de": 129.9,
+  "pix": true,
+  "nota": 4.7,
+  "vendidos": "+50mil",
+  "img": "859161-MLA99962428017_112025-AB.webp",
+  "link": "https://meli.la/2esUWci"
+ },
+ {
+  "nome": "Higienizador de Luvas Spray Anti-odor Boxe e Muay Thai",
+  "cat": "Luta",
+  "preco": 30.15,
+  "de": 45,
+  "nota": 4.8,
+  "vendidos": "+1000",
+  "img": "820493-MLB117418408121_092026-AB.webp",
+  "link": "https://meli.la/1z41ojq"
+ },
+ {
+  "nome": "Whey Protein Concentrado 100% 900g Refil Dark Lab Baunilha",
+  "cat": "Suplementos",
+  "preco": 139.9,
+  "de": 499.9,
+  "nota": 4.8,
+  "vendidos": "+50mil",
+  "img": "819335-MLA99933248115_112025-AB.webp",
+  "link": "https://meli.la/1Bj8EFN"
+ },
+ {
+  "nome": "Luva de Boxe Muay Thai 16oz + Bandagem + Bucal + Case Azul/Dourado",
+  "cat": "Luta",
+  "preco": 166,
+  "de": 256.33,
+  "nota": 4.8,
+  "vendidos": "+100",
+  "img": "795219-MLA104595771250_012026-AB.webp",
+  "link": "https://meli.la/28yQnYB"
+ },
+ {
+  "nome": "Capa Protetora Colchão Solteiro Impermeável Matelada",
+  "cat": "Casa",
+  "preco": 39.99,
+  "nota": 4.3,
+  "vendidos": "+50",
+  "img": "791801-MLA104035218870_012026-AB.webp",
+  "link": "https://meli.la/14GbbVk"
+ },
+ {
+  "nome": "Capa Protetora Colchão Casal Impermeável Matelada Preta",
+  "cat": "Casa",
+  "preco": 39.99,
+  "nota": 4.3,
+  "vendidos": "+50",
+  "img": "890064-MLA104619539168_012026-AB.webp",
+  "link": "https://meli.la/1R8a3FT"
+ },
+ {
+  "nome": "Capa Protetora Colchão King Impermeável Matelada Chumbo",
+  "cat": "Casa",
+  "preco": 55.9,
+  "img": "764505-MLA110943827762_052026-AB.webp",
+  "link": "https://meli.la/1byCC7i"
+ },
+ {
+  "nome": "Caneleira Maximum Muay Thai e Kickboxing Preta G",
+  "cat": "Luta",
+  "preco": 360.9,
+  "de": 499,
+  "pix": true,
+  "nota": 5.0,
+  "vendidos": "+100",
+  "img": "732704-MLB118964978291_102026-AB.webp",
+  "link": "https://meli.la/21wRZKp"
+ },
+ {
+  "nome": "Creatina Monohidratada 300g Dark Lab Refil Sem Sabor",
+  "cat": "Suplementos",
+  "preco": 37.9,
+  "de": 78.9,
+  "nota": 4.9,
+  "vendidos": "+1000",
+  "img": "719630-MLA117667254225_092026-AB.webp",
+  "link": "https://meli.la/2n2pFa7"
+ },
+ {
+  "nome": "Creatina Monohidratada 100g Max Titanium Sem Sabor",
+  "cat": "Suplementos",
+  "preco": 21.69,
+  "de": 30.13,
+  "nota": 4.8,
+  "vendidos": "+100mil",
+  "img": "697835-MLA117269994412_102026-AB.webp",
+  "link": "https://meli.la/21xad1N"
+ },
+ {
+  "nome": "Corda de Pular Segmentada Jump Rope Freestyle Ajustável",
+  "cat": "Luta",
+  "preco": 44.23,
+  "de": 76,
+  "vendidos": "+25",
+  "img": "614407-MLB100982773520_122025-AB-corda-pular-segmentada-jump-rope-freestyle-ajustavel-fitness.webp",
+  "link": "https://meli.la/27JdEQ5"
+ },
+ {
+  "nome": "5 Caixas Luva de Procedimento Vinil Sem Pó Talge M",
+  "cat": "Limpeza",
+  "preco": 73.5,
+  "nota": 4.8,
+  "vendidos": "+10mil",
+  "img": "712919-MLU70346758600_072023-AB.webp",
+  "link": "https://meli.la/2vV7zc2"
+ },
+ {
+  "nome": "Luva Vinil Descartável Sem Pó Caixa com 100",
+  "cat": "Limpeza",
+  "preco": 22.56,
+  "de": 26.89,
+  "nota": 4.8,
+  "vendidos": "+100",
+  "img": "977530-MLA111027495562_052026-AB.webp",
+  "link": "https://meli.la/1tUgvQQ"
+ },
+ {
+  "nome": "Filamento PLA Azul Premium 1kg Voolt3D",
+  "cat": "Impressão 3D",
+  "preco": 113.9,
+  "de": 159.9,
+  "pix": true,
+  "nota": 4.9,
+  "vendidos": "+5mil",
+  "img": "904709-MLA116328919096_092026-AB.webp",
+  "link": "https://meli.la/2mfa78j"
+ },
+ {
+  "nome": "Filamento PLA Branco Dental 1kg Voolt3D",
+  "cat": "Impressão 3D",
+  "preco": 113.9,
+  "de": 159.9,
+  "pix": true,
+  "nota": 4.9,
+  "vendidos": "+10mil",
+  "img": "838113-MLA118260414245_092026-AB.webp",
+  "link": "https://meli.la/1ZmKyTx"
+ },
+ {
+  "nome": "Filamento PLA Rosa Púrpura 1kg Voolt3D 1,75mm",
+  "cat": "Impressão 3D",
+  "preco": 113.9,
+  "de": 159.9,
+  "pix": true,
+  "nota": 4.9,
+  "vendidos": "+1000",
+  "img": "831375-MLA116329659486_092026-AB.webp",
+  "link": "https://meli.la/1CbkvAV"
+ },
+ {
+  "nome": "Filamento PETG Branco Translúcido 1kg 1,75mm",
+  "cat": "Impressão 3D",
+  "preco": 62.99,
+  "de": 106.11,
+  "nota": 4.8,
+  "vendidos": "+5mil",
+  "img": "651784-MLA109546785501_032026-AB.webp",
+  "link": "https://meli.la/23tTzKE"
+ },
+ {
+  "nome": "Filamento PETG Prata Masterprint 1kg 1,75mm",
+  "cat": "Impressão 3D",
+  "preco": 60.13,
+  "nota": 4.8,
+  "vendidos": "+5mil",
+  "img": "776099-MLA99483058860_112025-AB.webp",
+  "link": "https://meli.la/2fNPyLf"
+ }
+]
