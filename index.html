@@ -105,7 +105,7 @@ footer{padding-block:28px 40px;color:var(--muted);font-size:12px;border-top:1px 
 <footer><div class="wrap">Achados do Litoral participa do Programa de Afiliados do Mercado Livre. Podemos receber comissão pelas compras feitas através dos links desta página, sem custo extra para você. Preços e disponibilidade podem mudar no site do vendedor. Receba os achados no <a href="https://whatsapp.com/channel/0029Vb96yLW6BIEZVmVqQM1X" target="_blank" rel="noopener" style="color:var(--accent)">canal do WhatsApp</a>.</div></footer>
 
 <script>
-/* Os produtos ficam no arquivo produtos.json.
+/* Os produtos ficam no arquivo produtos.json (lido do branch "fila" no GitHub).
    link: link de afiliado (meli.la) | img: foto | top: posição no ranking (opcional) | pix: true se o preço é no Pix */
 const IMG="https://http2.mlstatic.com/D_Q_NP_2X_";
 let PRODUTOS = [];
@@ -139,7 +139,11 @@ function card(p){
 }
 document.addEventListener("error",e=>{const t=e.target;if(t.tagName==="IMG"&&t.dataset.c){t.outerHTML=iconSvg(t.dataset.c)}},true);
 
-fetch("produtos.json",{cache:"no-cache"}).then(r=>r.json()).then(lista=>{PRODUTOS=lista;
+/* A lista vem direto do GitHub (branch "fila"): produto novo aparece no site em poucos minutos, sem nova publicação na Netlify.
+   Se o GitHub falhar, usa a cópia local de produtos.json. */
+const GH="https://raw.githubusercontent.com/fsoaresneto2012-collab/achados-do-litoral/fila/";
+const pega=u=>fetch(u,{cache:"no-cache"}).then(r=>{if(!r.ok)throw r.status;return r.json()});
+pega(GH+"produtos.json").then(l=>l.map(p=>p.img&&/^img\//.test(p.img)?{...p,img:GH+p.img}:p)).catch(()=>pega("produtos.json")).then(lista=>{PRODUTOS=lista;
 const cats=["Todos",...new Set(PRODUTOS.map(p=>p.cat))];
 let cat="Todos",q="";
 const chips=document.getElementById("chips");
